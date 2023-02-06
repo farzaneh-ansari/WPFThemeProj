@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ImageResources\login.jpeg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ThemeDemo.Theme.Spring\ThemeDemo.Theme.Spring.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="ImageResources\login.jpeg" />
+  </ItemGroup>
+
+</Project>
