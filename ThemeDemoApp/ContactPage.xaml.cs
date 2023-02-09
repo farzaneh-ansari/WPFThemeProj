@@ -16,24 +16,13 @@ using System.Windows.Shapes;
 namespace ThemeDemoApp
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for ContactPage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class ContactPage : Page
     {
-        public MainWindow()
+        public ContactPage()
         {
             InitializeComponent();
-        }    
-
-        private void Login_Click(object sender, RoutedEventArgs e)
-        {
-            _NavigationFrame.Navigate(new LoginPage());
-            
-        }
-
-        private void Contact_Click(object sender, RoutedEventArgs e)
-        {
-            _NavigationFrame.Navigate(new ContactPage());
         }
     }
 }
