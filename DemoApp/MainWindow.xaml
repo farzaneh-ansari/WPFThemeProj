@@ -7,7 +7,15 @@
         xmlns:local="clr-namespace:DemoApp"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/ThemeDemo.Theme.Spring;component/ResourceDictionary/ButtonEllipse.xaml"/>
+
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid  Background="{DynamicResource  myGradientBrush}">
         <uc:Login></uc:Login>
     </Grid>
 </Window>

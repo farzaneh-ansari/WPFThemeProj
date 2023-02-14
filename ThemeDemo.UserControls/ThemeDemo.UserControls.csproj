@@ -11,7 +11,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ThemeDemo.Theme.Spring\ThemeDemo.Theme.Spring.csproj" />
     <ProjectReference Include="..\ThemeDemo.Theme.Winter\ThemeDemo.Theme.Winter.csproj" />
   </ItemGroup>
 

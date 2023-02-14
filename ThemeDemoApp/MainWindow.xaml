@@ -10,6 +10,7 @@
         <Menu >
             <Button Content="Login" Click="Login_Click"/>
             <Button Content="Contact" Click="Contact_Click"/>
+            <Button Content="CustomControls" Click="CustomControls_Click"/>
         </Menu>
         <DockPanel>
             <Frame x:Name="_NavigationFrame" NavigationUIVisibility="Hidden" Height="311" />

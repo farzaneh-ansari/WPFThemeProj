@@ -35,5 +35,10 @@ namespace ThemeDemoApp
         {
             _NavigationFrame.Navigate(new ContactPage());
         }
+
+        private void CustomControls_Click(object sender, RoutedEventArgs e)
+        {
+            _NavigationFrame.Navigate(new CustomControls());
+        }
     }
 }
