@@ -55,7 +55,7 @@ namespace ThemeDemo.Theme.Winter.CustomControls
     {
         public NumericUpDown()
         {
-            DefaultStyleKeyProperty.OverrideMetadata(typeof(NumericUpDown), new FrameworkPropertyMetadata(typeof(NumericUpDown)));
+            //DefaultStyleKeyProperty.OverrideMetadata(typeof(NumericUpDown), new FrameworkPropertyMetadata(typeof(NumericUpDown)));
             DefaultStyleKey = typeof(NumericUpDown);
             this.IsTabStop = true;
         }

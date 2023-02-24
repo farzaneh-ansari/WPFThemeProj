@@ -4,6 +4,9 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:uc="clr-namespace:ThemeDemo.UserControls;assembly=ThemeDemo.UserControls"
+        xmlns:control="clr-namespace:ThemeDemo.Theme.Spring.CustomColor;assembly=ThemeDemo.Theme.Spring"
+        xmlns:ipipe="clr-namespace:ThemeDemo.Theme.Spring.Ipipe;assembly=ThemeDemo.Theme.Spring"
+        
         xmlns:local="clr-namespace:DemoApp"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
@@ -11,11 +14,13 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="pack://application:,,,/ThemeDemo.Theme.Spring;component/ResourceDictionary/ButtonEllipse.xaml"/>
+                <!--<ResourceDictionary Source="pack://application:,,,/ThemeDemo.Theme.Spring;component/ResourceDictionary/ColorResources.xaml"/>-->                                         
 
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
-    </Window.Resources>
-    <Grid  Background="{DynamicResource  myGradientBrush}">
-        <uc:Login></uc:Login>
+    </Window.Resources>    
+    <Grid Background="{x:Static ipipe:IpipeBrushes.AliceBlueBrush}">
+        <!--<control:CustomGradienBrush/>-->        
+        <uc:Login></uc:Login>        
     </Grid>
 </Window>
