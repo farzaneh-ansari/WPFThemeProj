@@ -18,8 +18,8 @@
 
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
-    </Window.Resources>    
-    <Grid Background="{x:Static ipipe:IpipeBrushes.AliceBlueBrush}">
+    </Window.Resources>
+    <Grid Background="{x:Static ipipe:IpipeLinearGradientBrushes.AntiqueWhiteAquaBrush}">
         <!--<control:CustomGradienBrush/>-->        
         <uc:Login></uc:Login>        
     </Grid>

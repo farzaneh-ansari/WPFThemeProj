@@ -14,6 +14,7 @@ namespace ThemeDemo.Theme.Spring.Ipipe
     {
         AliceBlueBrush = 0xFFF0F8FF,
         AntiqueWhiteBrush = 0xFFFAEBD7,
+        AquaBrush = 0xFF00FFFF,
     }
 
     internal static class IpipeColors 
@@ -23,11 +24,13 @@ namespace ThemeDemo.Theme.Spring.Ipipe
         {        
             dictionary[nameof(AliceBlueBrush)] = UIntToColor((uint)ipipeKnownColors.AliceBlueBrush);          
             dictionary[nameof(AntiqueWhiteBrush)] = UIntToColor((uint)ipipeKnownColors.AntiqueWhiteBrush);
+            dictionary[nameof(AquaBrush)] = UIntToColor((uint)ipipeKnownColors.AquaBrush);
         }
         public static Color AliceBlueBrush => (Color)dictionary[nameof(AliceBlueBrush)];
         public static Color AntiqueWhiteBrush => (Color)dictionary[nameof(AntiqueWhiteBrush)];
+        public static Color AquaBrush => (Color)dictionary[nameof(AquaBrush)];
 
-        private  static Color UIntToColor(uint color)
+        private static Color UIntToColor(uint color)
         {
             byte a = (byte)(color >> 24);
             byte r = (byte)(color >> 16);
@@ -48,9 +51,19 @@ namespace ThemeDemo.Theme.Spring.Ipipe
         static IpipeBrushes()
         {           
             dictionary[nameof(AliceBlueBrush)] = new SolidColorBrush(IpipeColors.AliceBlueBrush);
-            dictionary[nameof(AntiqueWhiteBrush)] = new SolidColorBrush(IpipeColors.AntiqueWhiteBrush);
+            dictionary[nameof(AntiqueWhiteBrush)] = new SolidColorBrush(IpipeColors.AntiqueWhiteBrush);            
         }
         public static Brush AliceBlueBrush => (Brush)dictionary[nameof(AliceBlueBrush)];
         public static Brush AntiqueWhiteBrush => (Brush)dictionary[nameof(AntiqueWhiteBrush)];
+    }
+
+    public static class IpipeLinearGradientBrushes
+    {
+        readonly static ResourceDictionary dictionary = new ResourceDictionary();
+        static IpipeLinearGradientBrushes()
+        {            
+            dictionary[nameof(AntiqueWhiteAquaBrush)] = new LinearGradientBrush(IpipeColors.AntiqueWhiteBrush, IpipeColors.AquaBrush, 100);
+        }
+        public static Brush AntiqueWhiteAquaBrush => (Brush)dictionary[nameof(AntiqueWhiteAquaBrush)];        
     }
 }
