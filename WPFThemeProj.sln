@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThemeDemoApp", "ThemeDemoApp\ThemeDemoApp.csproj", "{2D13AC95-3849-4754-913A-B5BACE7F5AFA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThemeDemoApp", "ThemeDemoApp\ThemeDemoApp.csproj", "{2D13AC95-3849-4754-913A-B5BACE7F5AFA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThemeDemo.UserControls", "ThemeDemo.UserControls\ThemeDemo.UserControls.csproj", "{8B68792B-F4E9-4C8C-AD65-D22AA213058D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThemeDemo.UserControls", "ThemeDemo.UserControls\ThemeDemo.UserControls.csproj", "{8B68792B-F4E9-4C8C-AD65-D22AA213058D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThemeDemo.Theme.Spring", "ThemeDemo.Theme.Spring\ThemeDemo.Theme.Spring.csproj", "{9947A0F9-D371-4086-BAB6-B3E1A1FC647B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThemeDemo.Theme.Spring", "ThemeDemo.Theme.Spring\ThemeDemo.Theme.Spring.csproj", "{9947A0F9-D371-4086-BAB6-B3E1A1FC647B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThemeDemo.Theme.Winter", "ThemeDemo.Theme.Winter\ThemeDemo.Theme.Winter.csproj", "{38E1C8FA-B3AB-4209-8057-1C61482AC7B6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThemeDemo.Theme.Winter", "ThemeDemo.Theme.Winter\ThemeDemo.Theme.Winter.csproj", "{38E1C8FA-B3AB-4209-8057-1C61482AC7B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoApp", "DemoApp\DemoApp.csproj", "{A6B7CB01-9230-45EE-A49C-6B16AD3FDE93}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoApp", "DemoApp\DemoApp.csproj", "{A6B7CB01-9230-45EE-A49C-6B16AD3FDE93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThemeDemo.Theme.ColorsGenerator", "ThemeDemo.Theme.ColorsGenerator\ThemeDemo.Theme.ColorsGenerator.csproj", "{4209EA03-C561-4254-ABDD-41D1784CB34C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{A6B7CB01-9230-45EE-A49C-6B16AD3FDE93}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6B7CB01-9230-45EE-A49C-6B16AD3FDE93}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6B7CB01-9230-45EE-A49C-6B16AD3FDE93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4209EA03-C561-4254-ABDD-41D1784CB34C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4209EA03-C561-4254-ABDD-41D1784CB34C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4209EA03-C561-4254-ABDD-41D1784CB34C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4209EA03-C561-4254-ABDD-41D1784CB34C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

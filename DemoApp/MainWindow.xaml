@@ -6,7 +6,7 @@
         xmlns:uc="clr-namespace:ThemeDemo.UserControls;assembly=ThemeDemo.UserControls"
         xmlns:control="clr-namespace:ThemeDemo.Theme.Spring.CustomColor;assembly=ThemeDemo.Theme.Spring"
         xmlns:ipipe="clr-namespace:ThemeDemo.Theme.Spring.Ipipe;assembly=ThemeDemo.Theme.Spring"
-        
+        xmlns:themecolor="clr-namespace:ThemeDemo.Theme.ColorsGenerator;assembly=ThemeDemo.Theme.ColorsGenerator"        
         xmlns:local="clr-namespace:DemoApp"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
@@ -19,8 +19,20 @@
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Window.Resources>
-    <Grid Background="{x:Static ipipe:IpipeLinearGradientBrushes.AntiqueWhiteAquaBrush}">
-        <!--<control:CustomGradienBrush/>-->        
-        <uc:Login></uc:Login>        
+
+    <Grid Background="{x:Static themecolor:IpipeColors.HeaderGradientBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition  />           
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*" />
+            <RowDefinition Height="10*" />            
+        </Grid.RowDefinitions>
+        <!--<control:CustomGradienBrush/>-->
+
+        <themecolor:BackgroundThemeColor></themecolor:BackgroundThemeColor>
+        <Label Content="Main Login" Grid.Row="0" Grid.Column="0" Foreground="{x:Static themecolor:IpipeColors.ApplicationForegroundBrush}" />
+        <uc:Login Grid.Row="1" Grid.Column="0"></uc:Login>
+        
     </Grid>
 </Window>
