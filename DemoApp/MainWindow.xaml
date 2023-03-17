@@ -20,7 +20,7 @@
         </ResourceDictionary>
     </Window.Resources>
 
-    <Grid Background="{x:Static themecolor:IpipeColors.HeaderGradientBrush}">
+    <Grid Background="{x:Static themecolor:IpipeColors.ApplicationBackgroundBrush}">
         <Grid.ColumnDefinitions>
             <ColumnDefinition  />           
         </Grid.ColumnDefinitions>
@@ -30,7 +30,7 @@
         </Grid.RowDefinitions>
         <!--<control:CustomGradienBrush/>-->
 
-        <themecolor:BackgroundThemeColor></themecolor:BackgroundThemeColor>
+        <!--<themecolor:BackgroundThemeColor></themecolor:BackgroundThemeColor>-->
         <Label Content="Main Login" Grid.Row="0" Grid.Column="0" Foreground="{x:Static themecolor:IpipeColors.ApplicationForegroundBrush}" />
         <uc:Login Grid.Row="1" Grid.Column="0"></uc:Login>
         
