@@ -1,0 +1,8 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+                    xmlns:ipipecore="clr-namespace:ThemeDemo.IpipeCore;assembly=ThemeDemo.IpipeCore">
+    <ResourceDictionary.MergedDictionaries>
+        <!--<ipipecore:BrushesDictionary Source="ResourceDictionary/Colors/Default.xaml"/>-->
+        <ipipecore:BrushesDictionary Source="ResourceDictionary/Colors/Default.xaml"/>
+        <ResourceDictionary Source="ResourceDictionary/Controls/AllControls.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>

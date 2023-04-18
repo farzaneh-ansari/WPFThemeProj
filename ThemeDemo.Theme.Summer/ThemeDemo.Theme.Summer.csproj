@@ -7,11 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="ImageResources\login.jpeg" />
+    <ProjectReference Include="..\ThemeDemo.IpipeCore\ThemeDemo.IpipeCore.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="ImageResources\login.jpeg" />
+    <Page Update="Theme.xaml">
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
 
 </Project>

@@ -11,7 +11,7 @@
     <Page.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="pack://application:,,,/ThemeDemo.Theme.Winter;component/ResourceDictionary/ButtonEllipse.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/ThemeDemo.Theme.Spring;component/ResourceDictionary/ButtonEllipse.xaml"/>
                 <ResourceDictionary Source="pack://application:,,,/ThemeDemo.Theme.Winter;component/ResourceDictionary/TextBlockStyle.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>

@@ -13,7 +13,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThemeDemo.Theme.Winter", "T
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoApp", "DemoApp\DemoApp.csproj", "{A6B7CB01-9230-45EE-A49C-6B16AD3FDE93}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThemeDemo.Theme.ColorsGenerator", "ThemeDemo.Theme.ColorsGenerator\ThemeDemo.Theme.ColorsGenerator.csproj", "{4209EA03-C561-4254-ABDD-41D1784CB34C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThemeDemo.Theme.ColorsGenerator", "ThemeDemo.Theme.ColorsGenerator\ThemeDemo.Theme.ColorsGenerator.csproj", "{4209EA03-C561-4254-ABDD-41D1784CB34C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThemeDemo.Theme.Summer", "ThemeDemo.Theme.Summer\ThemeDemo.Theme.Summer.csproj", "{ADE73E8B-0D2A-4CD9-B8B4-50F62D4BB62A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThemeDemo.Theme.Default", "ThemeDemo.Theme.Default\ThemeDemo.Theme.Default.csproj", "{EE56B4DB-150C-49A1-BE91-591A7BEE2C1E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThemeDemo.IpipeCore", "ThemeDemo.IpipeCore\ThemeDemo.IpipeCore.csproj", "{EA935189-21DC-40B8-92BB-BA41CD0FFEB7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +51,18 @@ Global
 		{4209EA03-C561-4254-ABDD-41D1784CB34C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4209EA03-C561-4254-ABDD-41D1784CB34C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4209EA03-C561-4254-ABDD-41D1784CB34C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADE73E8B-0D2A-4CD9-B8B4-50F62D4BB62A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADE73E8B-0D2A-4CD9-B8B4-50F62D4BB62A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADE73E8B-0D2A-4CD9-B8B4-50F62D4BB62A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADE73E8B-0D2A-4CD9-B8B4-50F62D4BB62A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE56B4DB-150C-49A1-BE91-591A7BEE2C1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE56B4DB-150C-49A1-BE91-591A7BEE2C1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE56B4DB-150C-49A1-BE91-591A7BEE2C1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE56B4DB-150C-49A1-BE91-591A7BEE2C1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA935189-21DC-40B8-92BB-BA41CD0FFEB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA935189-21DC-40B8-92BB-BA41CD0FFEB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA935189-21DC-40B8-92BB-BA41CD0FFEB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA935189-21DC-40B8-92BB-BA41CD0FFEB7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

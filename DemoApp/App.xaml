@@ -1,9 +1,10 @@
 ﻿<Application x:Class="DemoApp.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:DemoApp"
-             StartupUri="MainWindow.xaml">
+             xmlns:local="clr-namespace:DemoApp"             
+             xmlns:ipipeCore="clr-namespace:ThemeDemo.IpipeCore;assembly=ThemeDemo.IpipeCore"
+             StartupUri="MainLogin.xaml">
     <Application.Resources>
-         
+        <ipipeCore:ThemeDictionary ThemeName="Default"/>
     </Application.Resources>
 </Application>

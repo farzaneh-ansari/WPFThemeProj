@@ -1,0 +1,30 @@
+﻿<Window x:Class="DemoApp.MainLogin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:uc="clr-namespace:ThemeDemo.UserControls;assembly=ThemeDemo.UserControls"        
+        xmlns:local="clr-namespace:DemoApp"
+        xmlns:ipipeCore="clr-namespace:ThemeDemo.IpipeCore;assembly=ThemeDemo.IpipeCore"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" >
+    <Window.Resources>     
+
+    </Window.Resources>
+
+    <Grid>        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition  />           
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*" />
+            <RowDefinition Height="10*" />            
+        </Grid.RowDefinitions>
+        <Label Content="Main Login" Grid.Row="0" Grid.Column="0" Background="{DynamicResource ApplicationBackgroundBrush}"/>
+        <StackPanel Grid.Row="1" Grid.Column="0">
+        <uc:Login ></uc:Login>
+            <Button Click="Default_Click" Content="Default Theme" Width="150" Margin = "10"/>
+            <Button Click="Summer_Click" Content="Summer Theme" Width="150"/>
+        </StackPanel>
+    </Grid>
+</Window>

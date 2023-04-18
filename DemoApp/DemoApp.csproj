@@ -8,9 +8,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ThemeDemo.Theme.ColorsGenerator\ThemeDemo.Theme.ColorsGenerator.csproj" />
-    <ProjectReference Include="..\ThemeDemo.Theme.Spring\ThemeDemo.Theme.Spring.csproj" />
+    <ProjectReference Include="..\ThemeDemo.Theme.Default\ThemeDemo.Theme.Default.csproj" />
+    <ProjectReference Include="..\ThemeDemo.Theme.Summer\ThemeDemo.Theme.Summer.csproj" />
     <ProjectReference Include="..\ThemeDemo.UserControls\ThemeDemo.UserControls.csproj" />
   </ItemGroup>
-
+	
 </Project>

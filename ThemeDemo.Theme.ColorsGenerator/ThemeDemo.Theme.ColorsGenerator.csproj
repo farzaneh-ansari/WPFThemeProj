@@ -7,7 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="ResourceDictionary\" />
+    <Compile Remove="ThemeControl.cs" />
+    <Compile Remove="ThemeManager.cs" />
   </ItemGroup>
 
 </Project>
