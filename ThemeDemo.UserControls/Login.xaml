@@ -22,6 +22,16 @@
 
         <TextBox Grid.Row="0" Grid.Column="1" />
         <TextBox Grid.Row="1" Grid.Column="1" />
+        <ComboBox Margin="10,10,0,13" Grid.Row="2" Grid.Column="0" Name="ComboBox1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="194" Height="30">
+            <ComboBoxItem Content="Coffie"></ComboBoxItem>
+            <Button Content="hi"/>
+            <TextBox>TextBox</TextBox>
+            <ComboBoxItem Content="Tea"></ComboBoxItem>
+            <ComboBoxItem Content="Orange Juice"></ComboBoxItem>
+            <ComboBoxItem Content="Milk"></ComboBoxItem>
+            <ComboBoxItem Content="Iced Tea"></ComboBoxItem>
+            <ComboBoxItem Content="Mango Shake"></ComboBoxItem>
+        </ComboBox>
         <Image HorizontalAlignment="Center"   Height="100" Margin="0,46,0,0" Grid.Row="2" VerticalAlignment="Top" Width="100" Source="ImageResources/login.jpeg"/>
         <Button Grid.Column="1" Content="Login" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Top" Width="165" Height="48" Margin="75,67,0,0"/>
 

@@ -12,7 +12,7 @@
 
     </Window.Resources>
 
-    <Grid>        
+    <Grid Background="{StaticResource HeaderGradientBrush}">
         <Grid.ColumnDefinitions>
             <ColumnDefinition  />           
         </Grid.ColumnDefinitions>
@@ -20,9 +20,9 @@
             <RowDefinition Height="5*" />
             <RowDefinition Height="10*" />            
         </Grid.RowDefinitions>
-        <Label Content="Main Login" Grid.Row="0" Grid.Column="0" Background="{DynamicResource ApplicationBackgroundBrush}"/>
+        <Label Content="Main Login" Grid.Row="0" Grid.Column="0" Background="{DynamicResource HeaderGradientBrush}"/>
         <StackPanel Grid.Row="1" Grid.Column="0">
-        <uc:Login ></uc:Login>
+            <uc:Login></uc:Login>
             <Button Click="Default_Click" Content="Default Theme" Width="150" Margin = "10"/>
             <Button Click="Summer_Click" Content="Summer Theme" Width="150"/>
         </StackPanel>

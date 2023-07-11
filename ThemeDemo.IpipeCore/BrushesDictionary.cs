@@ -54,7 +54,7 @@ namespace ThemeDemo.IpipeCore
         public SolidColorBrush ControlDisabledBackgroundBrush => (SolidColorBrush)this[nameof(ControlDisabledBackgroundBrush)];
         public SolidColorBrush ControlDisabledBorderBrush => (SolidColorBrush)this[nameof(ControlDisabledBorderBrush)];
 
-        public GradientBrush HeaderGradientBrush => (GradientBrush)this[nameof(HeaderGradientBrush)];
+        public LinearGradientBrush HeaderGradientBrush => (LinearGradientBrush)this[nameof(HeaderGradientBrush)];
              
 
         void UpdateBrushes()
@@ -62,7 +62,16 @@ namespace ThemeDemo.IpipeCore
             this[nameof(ApplicationBackgroundBrush)] = new SolidColorBrush(ApplicationBackground);
             this[nameof(ApplicationForegroundBrush)] = new SolidColorBrush(ApplicationForeground);
 
-            this[nameof(HeaderGradientBrush)] = new LinearGradientBrush(VortalBaseColor1, VortalBaseColor3, new Point(0, 0), new Point(0, 1));
+            GradientStopCollection wfGradientStopCollection = new GradientStopCollection { 
+                new GradientStop(VortalBaseColor7, 0.0),
+                new GradientStop(Colors.Transparent, 0.5),
+                new GradientStop(VortalBaseColor7, 1.0)
+            };
+
+            LinearGradientBrush wfLinearGradientBrush = new LinearGradientBrush(wfGradientStopCollection, new Point(0, 0),new Point(1, 0));           
+            RotateTransform rt = new RotateTransform(0, 0.5, 0.5);           
+            wfLinearGradientBrush.RelativeTransform = rt;
+            this[nameof(HeaderGradientBrush)] = wfLinearGradientBrush;//new LinearGradientBrush(VortalBaseColor1, VortalBaseColor3, new Point(0, 0), new Point(0, 1));
 
 
             this[nameof(TextBoxBackgroundBrush)] = new SolidColorBrush(VortalBaseColor3);
@@ -70,16 +79,20 @@ namespace ThemeDemo.IpipeCore
             this[nameof(TextBoxForegroundBrush)] = new SolidColorBrush(VortalBaseColor7);
             this[nameof(TextBoxSelectionBrush)] = new SolidColorBrush(VortalBaseColor705);
 
-
+            ButtonBrush();
+            
+            this[nameof(ControlDisabledForegroundBrush)] = new SolidColorBrush(VortalBaseColor5);
+            this[nameof(ControlDisabledBackgroundBrush)] = new SolidColorBrush(VortalBaseColor1);
+            this[nameof(ControlDisabledBorderBrush)] = new SolidColorBrush(VortalBaseColor1);//#333333 should convert
+        }
+        void ButtonBrush()
+        {
             this[nameof(ButtonForegroundBrush)] = new SolidColorBrush(VortalBaseColor7);
             this[nameof(ButtonBackgroundBrush)] = new SolidColorBrush(VortalBaseColor3);
             this[nameof(ButtonBorderBrush)] = new SolidColorBrush(VortalBaseColor4);
             this[nameof(ButtonMouseOverBrush)] = new SolidColorBrush(VortalBaseColor4);
             this[nameof(ButtonPressedBrush)] = new SolidColorBrush(VortalBaseColor5);
 
-            this[nameof(ControlDisabledForegroundBrush)] = new SolidColorBrush(VortalBaseColor5);
-            this[nameof(ControlDisabledBackgroundBrush)] = new SolidColorBrush(VortalBaseColor1);
-            this[nameof(ControlDisabledBorderBrush)] = new SolidColorBrush(VortalBaseColor1);//#333333 should convert
         }
     }
 }
